@@ -2,12 +2,7 @@
 
 body {
     overflow-x: hidden;
-}
-
-button {
-    cursor: pointer;
-    position: relative;
-}
+} 
 
 * {
     margin: 0;
@@ -15,6 +10,12 @@ button {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+button {
+    cursor: pointer;
+    position: relative;
+}
+
 
 .header {
     background-color: black;
@@ -74,13 +75,16 @@ button {
     height: 545px;
 }
 
-.brand-section {
-    background-color: black;
-    color: white;
+.brand-section, .brand-image-container, .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.brand-section {
+    background-color: black;
+    color: white;
     padding-bottom: 160px;
 }
 
@@ -116,18 +120,10 @@ button {
     width: 250px;
     height: 100%;
     border-radius: 3px;
-
-}
-
-.brand-image-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-right: 24px;
 }
 
-.order-now {
+.order-now, .reserve-button {
     margin-top: 25px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: black;
@@ -137,12 +133,7 @@ button {
 }
 
 .reserve-button {
-    margin-top: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: black;
-    color: white;
     padding: 15px 40px;
-    border-radius: 30px;
 }
 
 .restaurant-franchises-section,
@@ -166,14 +157,6 @@ button {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .side-s-logo {
     position: absolute;
